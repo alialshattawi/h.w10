@@ -1,2 +1,35 @@
 
-666
+//q7Write the following programs:
+ //Write a JavaScript program that will create another array, which will be 2/3 * the corresponding 
+   // element in the new array + 1/2. Then, for each element in b, print element * every element in the new array 
+
+var b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+var x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+var y=[];
+var z=[];
+
+for (i=0;i<b.length;i++){
+        y[i]=(x[i]*2/3)+1/2;
+        z[i]=b[i]*x[i];
+}
+
+        console.log(y);
+
+        console.log(z);
+
+#ruby
+b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+y=[ ]
+z=[ ]
+
+(0..(b.length-1)).step(1) do |i|
+        y[i]=(x[i]*0.66666666666)+0.5
+        z[i]=b[i]*y[i]
+        end
+
+
+        puts(y)
+
+
+        puts(z)
