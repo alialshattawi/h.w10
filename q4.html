@@ -1,1 +1,34 @@
-4444
+
+// Write the following programs:
+// Write a JavaScript program that will print every element in a, however, it will reverse the word for every other element.
+//  Write the same program in Ruby
+
+
+var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+
+	 for (i=0;i<a.length;i++){
+	 if(i%2 !== 0) {
+		console.log(a[i].split("").reverse().join(""));
+	}else{
+	  console.log(a[i]);
+	
+	}
+}
+
+
+
+
+// ruby
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+
+#a.each do |x|
+	(0..(a.length-1)).step(1) do|x|
+	if(x %2 != 0) 
+		puts (a[x].split("").reverse().join(""))
+
+elsif
+	
+puts(a[x]);
+end
+	end   
