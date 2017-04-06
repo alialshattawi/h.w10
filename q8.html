@@ -1,0 +1,19 @@
+
+Write an HTML page with four paragraphs, and a text area. As you type into the text area, the same text will appear in 
+    all of the four paragraphs at the same time as you type.
+
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+       <form name="theform" action="something" method="something" />
+<input type="text" name="input1" onkeypress="document.theform.input2.value = this.value" />
+<input type="text" name="input2" />
+</form>
+   </head>
+   <body>
+
+
+   </body>
+</html>
